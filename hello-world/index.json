@@ -1,6 +1,6 @@
 {
-  "title": "Hello World Scenario",
-  "description": "Your First Scenario",
+  "title": "Self-healing of application deployments",
+  "description": "This scenario demonstrates the self-healing property of a Kubernetes app deployment.",
   "difficulty": "beginner",
   "time": "2 minutes",
   "details": {
