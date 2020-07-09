@@ -4,7 +4,8 @@ This is your first step.
 
 This is an _example_ of creating a scenario and running a **command**
 
-`kubectl create deployment kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp:v1`{{execute}}
+TODO scale to 3 should be an extra step
+`kubectl create deployment kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp:v1 --replicas=3`{{execute}}
 
 `kubectl get deployments`{{execute}}
 
