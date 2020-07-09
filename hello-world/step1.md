@@ -4,8 +4,13 @@ This is your first step.
 
 This is an _example_ of creating a scenario and running a **command**
 
-TODO scale to 3 should be an extra step
-`kubectl create deployment kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp:v1 --replicas=3`{{execute}}
+`kubectl create deployment kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp:v1`{{execute}}
+
+`kubectl get deployments`{{execute}}
+
+`kubectl get pods`{{execute}}
+
+`kubectl scale deployment/kubernetes-bootcamp --replicas=3`{{execute}}
 
 `kubectl get deployments`{{execute}}
 
@@ -16,4 +21,4 @@ echo Name of the Pod: $POD_NAME`{{execute}}
 
 `kubectl delete pods $POD_NAME`{{execute}}
 
-`kubectl describe deployments`{{execute}}
+`kubectl get pods`{{execute}}
