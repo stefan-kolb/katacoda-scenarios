@@ -11,6 +11,9 @@ TODO scale to 3 should be an extra step
 
 `kubectl get pods`{{execute}}
 
-`kubectl delete pods web-3476088249-w66jr`{{execute}}
+`export POD_NAME=$(kubectl get pods -o jsonpath="{.items[0].metadata.name}")
+echo Name of the Pod: $POD_NAME`{{execute}}
+
+`kubectl delete pods $POD_NAME`{{execute}}
 
 `kubectl describe deployments`{{execute}}
